@@ -2,7 +2,8 @@ FROM ghcr.io/therainbowphoenix/cp-codespace:beta-02
 
 USER root
 
-RUN apt-get update && apt-get install -y nano vim clangd-13 clang-format-13 wget
+RUN apt-get update && apt-get install -y nano vim wget
+# clangd-13 clang-format-13
 
 USER dev
 
